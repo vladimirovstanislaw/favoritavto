@@ -44,7 +44,7 @@ public class GmailQuickstart {
 			Arrays.asList(GmailScopes.GMAIL_LABELS, GmailScopes.GMAIL_READONLY, GmailScopes.GMAIL_MODIFY));
 
 	private static final List<String> SCOPES = list;
-	private static final String CREDENTIALS_FILE_PATH_OTHER_APP_BAD = "/client_id.json";
+	private static final String CREDENTIALS_FILE_PATH_OTHER_APP_BAD = "/client_secret_385445317199-1a3i8lq0giplaomlre5qsnaa962j77aa.apps.googleusercontent.com.json";
 	private final String pathToSaveFile;
 	private final String emailProvider;
 	private final String idEmailInSubj;
