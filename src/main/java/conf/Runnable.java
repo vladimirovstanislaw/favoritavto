@@ -9,6 +9,7 @@ import java.util.HashMap;
 import gmail.GmailQuickstart;
 import parsers.FourPointsParser;
 import rows.FourPointsRow;
+import sender.Sender;
 import upload.Upload;
 
 public class Runnable {
@@ -52,11 +53,9 @@ public class Runnable {
 					path_to + "\\" + "Nomenclature.csv", moySkladMap);
 			upload.writeFiles();
 
-//			Sender sender = new Sender();// 30 seconds timeout
-//			sender.setData(path_from, fileNameUploadFirst);
-//			sender.send();
-//			sender.setData(path_from, fileNameUploadSecond);
-//			sender.send();
+			Sender sender = new Sender();// 30 seconds timeout
+			sender.setData(path_from, fileNameUpload);
+			sender.send();
 
 		} else {
 			System.out.println("Not enough args");

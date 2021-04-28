@@ -76,7 +76,6 @@ public class FourPointsParser {
 		}
 
 		System.out.println("The number of entrys rows = " + countAllRows);
-		System.out.println(asIsMap);
 		myWorkBook.close();
 
 		return asIsMap;

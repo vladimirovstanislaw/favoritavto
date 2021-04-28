@@ -37,7 +37,7 @@ public class Sender {
 
 			System.out.println("Full filename = " + unixFrom + "/" + fileName);
 			sftpChannel.put(unixFrom + "/" + fileName, "/SFTP_W/" + fileName);
-
+			System.out.println("File: "+unixFrom + "/" + fileName+". Successfully sended.");
 			sftpChannel.exit();
 			session.disconnect();
 		} catch (JSchException e) {
