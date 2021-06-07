@@ -54,6 +54,7 @@ public class Runnable {
 			upload.writeFiles();
 
 			Sender sender = new Sender();// 30 seconds timeout
+			System.out.println("Sending file: " + path_from + "\\" + fileNameUpload);
 			sender.setData(path_from, fileNameUpload);
 			sender.send();
 
